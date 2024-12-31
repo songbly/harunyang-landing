@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 "use client";
 
 import Image from "next/image";
@@ -11,14 +12,11 @@ import {
   catSkyblue,
   catSkyblueBgBlack,
   catYellow,
-  catYellowBgBlack,
-  logoBlack,
-  logoWhite,
-  playstore,
+  catYellowBgBlack, playstore,
   step1,
   step2,
   step3,
-  step4,
+  step4
 } from "../assets";
 import {
   ASISLetter,
@@ -31,19 +29,15 @@ import {
   TOBELetter,
 } from "../assets/images";
 
-import Link from "next/link";
 import styled from "styled-components";
 import StoreButton from "../components/StoreButton";
 import Bubble from "../components/Bubble";
-import Letter from "../components/Letter";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import ProgressBar from "../components/ProgressBar";
 import Footer from "../components/Footer";
 import { ListInfinityAutoScroll } from "../components/ListInfinityAutoScroll";
 import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { usePathname } from "next/navigation";
 import Header from "../components/Header";
 
 const stepContents = [
@@ -72,7 +66,7 @@ const stepContents = [
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  const pathname = usePathname();
+  
   const [sent, setSent] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
