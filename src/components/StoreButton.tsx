@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-const StoreButton = ({ logo, text }) => {
+interface IProps {
+  logo: string;
+  text: string;
+}
+const StoreButton = ({ logo, text }: IProps) => {
   return (
     <ButtonWrapper>
       <Image src={logo} alt="store logo" />
