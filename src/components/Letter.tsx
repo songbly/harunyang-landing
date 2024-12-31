@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const Letter = ({type}) => {
+const Letter = () => {
   return (
     <LetterWrapper>
       <Header>to. 하루냥</Header>

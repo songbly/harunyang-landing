@@ -107,13 +107,6 @@ const Team = () => {
 
 export default Team;
 
-const TitleWrap = styled.div`
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-`;
-
 const Title = styled.h1`
   position: absolute;
   bottom: 20px;

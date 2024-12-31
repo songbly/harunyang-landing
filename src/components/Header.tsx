@@ -15,7 +15,7 @@ const Header = () => {
 
       <div className="flex items-center justify-around w-[380px]">
         {headers.map((item) => (
-          <Link href={item.path}>{item.label}</Link>
+          <Link href={item.path} key={item.label}>{item.label}</Link>
         ))}
       </div>
     </div>
